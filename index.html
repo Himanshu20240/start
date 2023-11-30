@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Radial icons </title>
+        <link rel="stylesheet" href="radial.css">
+    </head>
+    <body>
+        <ul class="menu">
+            <div class="toggle"><ion-icon name="add-outline"></ion-icon></div>
+            <li style="--i:0;--clr:rgb(255, 0, 0);">    
+            <a href="#"><ion-icon name="home-outline"></ion-icon></a>
+            </li>
+            <li style="--i:1;--clr:rgb(85, 255, 0);">
+            <a href="#"><ion-icon name="person-outline"></ion-icon></a>
+            </li>
+            <li style="--i:2;--clr:rgb(255, 238, 0);">
+            <a href="#"><ion-icon name="settings-outline"></ion-icon></a>
+            </li>
+            <li style="--i:3;--clr:rgb(255, 0, 238);">
+            <a href="#"><ion-icon name="mail-outline"></ion-icon></a>
+            </li>
+            <li style="--i:4;--clr:rgb(255, 174, 0);">
+           <a href="#"><ion-icon name="paper-plane-outline"></ion-icon></a>
+            </li>
+            <li style="--i:5;--clr:rgb(204, 255, 0);">
+            <a href="#"><ion-icon name="videocam-outline"></ion-icon></a>
+            </li>
+            <li style="--i:6;--clr:rgb(0, 255, 234);">
+            <a href="#"><ion-icon name="game-controller-outline"></ion-icon></a>
+            </li>
+            <li style="--i:7;--clr:rgb(255, 230, 0);">
+            <a href="#"><ion-icon name="bluetooth-outline"></ion-icon></a>
+            </li>
+           </ul>
+            <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>  
+            <script>
+                
+                let toggle = document.querySelector('.toggle');
+                let menu = document.querySelector('.menu');
+                toggle.onclick = function()
+                {
+                    menu.classList.toggle('active')
+                }
+            </script>
+    </body>
+</html>
